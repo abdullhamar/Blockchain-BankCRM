@@ -9,9 +9,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-### Decentralized Bank Customer Relationship Management System
+### Decentralized Bank Customer Management System
 
-A blockchain-based customer management application built using Solidity, Truffle, Web3.js, and MetaMask.
+A blockchain-based customer relationship management system built using Solidity, Truffle, Web3.js, and MetaMask.
 
 </div>
 
@@ -19,9 +19,9 @@ A blockchain-based customer management application built using Solidity, Truffle
 
 # 📖 Overview
 
-Blockchain BankCRM is a decentralized customer management system designed to demonstrate how blockchain technology can be integrated into banking-style customer record management.
+Blockchain BankCRM is a decentralized application (DApp) that demonstrates how blockchain technology can be used to manage customer records securely and transparently.
 
-The application combines a Solidity smart contract with a modern web interface, enabling secure and transparent customer operations through MetaMask and Ethereum-compatible networks.
+The system integrates an Ethereum smart contract with a modern web interface, allowing users to perform customer management operations through MetaMask and Web3.js.
 
 ---
 
@@ -31,39 +31,39 @@ The application combines a Solidity smart contract with a modern web interface, 
 
 * Add New Customers
 * View Customer Information
-* Update Customer Details
+* Update Customer Records
 * Remove Customers
 
-## 💰 Balance Operations
+## 💰 Balance Management
 
-* Deposit Balance
-* Withdraw Balance
-* Track Customer Balances
+* Deposit Customer Balance
+* Withdraw Customer Balance
+* View Customer Balances
 * Balance Visibility Control
 
-## 🔗 Blockchain Integration
+## 🔗 Blockchain Features
 
-* Ethereum Smart Contract
-* MetaMask Wallet Connection
-* Web3.js Integration
+* Smart Contract Deployment
+* MetaMask Wallet Integration
+* Web3.js Communication
 * Event Logging
 * Ownership Management
 
 ---
 
-# 🏗️ System Architecture
+# 🏗️ Architecture
 
 ```text
 User
  │
  ▼
-Frontend (HTML/CSS/JavaScript)
+Frontend (HTML / CSS / JavaScript)
  │
  ▼
 Web3.js
  │
  ▼
-MetaMask
+MetaMask Wallet
  │
  ▼
 BankCRM Smart Contract
@@ -80,7 +80,7 @@ Ethereum Blockchain
 
 * Solidity 0.8.17
 * Ethereum
-* Truffle
+* Truffle Framework
 * Ganache
 * MetaMask
 
@@ -123,6 +123,18 @@ Blockchain-BankCRM/
 
 ---
 
+# 📸 Application Preview
+
+<div align="center">
+
+![Blockchain BankCRM](screenshots/main.png)
+
+*Blockchain BankCRM User Interface*
+
+</div>
+
+---
+
 # 🚀 Installation
 
 ## Clone Repository
@@ -140,7 +152,7 @@ npm install
 
 ## Start Ganache
 
-Run Ganache locally:
+Run Ganache locally on:
 
 ```text
 127.0.0.1:7545
@@ -152,7 +164,7 @@ Run Ganache locally:
 truffle compile
 ```
 
-## Deploy Contract
+## Deploy Smart Contract
 
 ```bash
 truffle migrate --network development
@@ -172,40 +184,42 @@ http://localhost:8080
 
 ---
 
-# 🔐 Smart Contract Capabilities
+# 🔐 Smart Contract Functions
 
-The BankCRM contract supports:
+The BankCRM smart contract supports:
 
-* Customer Creation
-* Customer Retrieval
-* Customer Updates
-* Customer Removal
-* Deposits
-* Withdrawals
-* Ownership Transfer
-* Customer Listing
+* addCustomer()
+* getCustomer()
+* updateCustomer()
+* removeCustomer()
+* depositToCustomer()
+* withdrawFromCustomer()
+* transferOwnership()
+* listCustomers()
 
 ---
 
-# 📸 Screenshots
+# 🎯 Learning Objectives
 
-![Blockchain BankCRM](screenshots/main.png)
----
+This project demonstrates:
 
-# 🎓 Academic Purpose
-
-This project was developed as a practical blockchain development project to demonstrate the use of smart contracts, decentralized applications (DApps), and Web3 technologies.
+* Smart Contract Development
+* Ethereum DApp Development
+* MetaMask Integration
+* Web3.js Communication
+* Blockchain-Based Data Management
+* Decentralized Application Architecture
 
 ---
 
 # 🚀 Future Improvements
 
-* Real Ethereum Testnet Deployment
-* Transaction History
+* Ethereum Testnet Deployment
+* Transaction History Tracking
 * Customer Authentication
-* Multi-User Roles
-* Enhanced Analytics Dashboard
-* Responsive Mobile Experience
+* Multi-Role Authorization
+* Analytics Dashboard
+* Mobile Responsive Interface
 
 ---
 
@@ -215,16 +229,24 @@ This project was developed as a practical blockchain development project to demo
 
 Information Security Student
 
-GitHub:
+**GitHub:**
 https://github.com/abdullhamar
 
-LinkedIn:
+**LinkedIn:**
 https://www.linkedin.com/in/abdullah-amar-6b117240b
 
 ---
 
 # ⭐ Support
 
-If you found this project useful, consider giving it a star ⭐.
+If you find this project useful, consider giving it a star ⭐.
 
 It helps support future development and encourages open-source contributions.
+
+---
+
+<div align="center">
+
+### Built with Solidity, Web3.js, and Ethereum 🚀
+
+</div>

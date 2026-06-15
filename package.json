@@ -1,0 +1,15 @@
+{
+  "name": "bank-dapp",
+  "version": "1.0.0",
+  "description": "Simple BankCRM dApp (Solidity ^0.8.17) + Truffle + frontend",
+  "scripts": {
+    "start": "npx http-server ./ -c-1 -p 8080",
+    "build": "truffle compile",
+    "migrate": "truffle migrate --network development"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "truffle": "^5.11.5",
+    "web3": "^1.10.0"
+  }
+}

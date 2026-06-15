@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bank App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Bank App</h1>
+      <p>نظام إدارة عملاء بنكي لامركزي باستخدام البلوك تشين</p>
+
+      <!-- وضع ليلي / نهاري -->
+      <button id="themeToggle" class="secondary">🌙 تبديل الوضع</button>
+    </div>
+
+    <!-- Wallet Section -->
+    <div id="wallet" class="card wallet-card">
+      <p>الحساب الحالي:</p>
+      <span id="account" class="account">غير متصل</span>
+      <button id="connectBtn">🔗 الاتصال بمحفظة MetaMask</button>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <div class="stat-box">
+        <h3>عدد العملاء</h3>
+        <p id="totalCustomers">0</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>الحالة</h3>
+        <p style="color:#00ff99">متصل 🚀</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>الشبكة</h3>
+        <p id="networkName">Ganache</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>الرصيد</h3>
+        <p id="balanceHidden">*** مخفي ***</p>
+        <button id="showBalanceBtn" class="secondary">👁 إظهار</button>
+      </div>
+    </div>
+
+    <!-- Add Customer -->
+    <div class="card">
+      <h2>إضافة عميل جديد</h2>
+
+      <form id="addForm" class="form-group">
+        <input id="name" placeholder="الاسم الكامل" required />
+        <input id="email" placeholder="البريد الإلكتروني" required />
+        <input id="initBal" type="number" min="0" value="0" placeholder="الرصيد الابتدائي" />
+        <button type="submit">➕ إضافة العميل</button>
+      </form>
+    </div>
+
+    <!-- Customers Table -->
+    <div class="card">
+      <div class="table-header">
+        <h2>قائمة العملاء</h2>
+        <button id="refreshBtn" class="secondary">🔄 تحديث</button>
+      </div>
+
+      <table id="customersTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>الاسم</th>
+            <th>البريد</th>
+            <th>الرصيد</th>
+            <th>التحكم</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Log -->
+    <div id="log" class="card small log-box"></div>
+
+  </div>
+
+  <!-- ===== Modal تعديل ===== -->
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>تعديل بيانات العميل</h2>
+
+      <input id="editName" placeholder="الاسم الجديد" />
+      <input id="editEmail" placeholder="البريد الجديد" />
+
+      <div class="modal-actions">
+        <button id="saveEditBtn">💾 حفظ</button>
+        <button id="closeModalBtn" class="secondary">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

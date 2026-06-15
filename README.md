@@ -127,7 +127,7 @@ Blockchain-BankCRM/
 
 <div align="center">
 
-![Blockchain BankCRM](screenshots/main.png)
+![Blockchain BankCRM](screenshots/mian.png)
 
 *Blockchain BankCRM User Interface*
 
